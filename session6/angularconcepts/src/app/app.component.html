@@ -1,7 +1,12 @@
+
+<app-templatedrivenform></app-templatedrivenform>
+
+
+
 <h2 *ngIf = "false">Welcome to {{ title }}</h2>
 <p [style.color] = "color == 'red' ? 'blue': 'green' ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ducimus. Officia, voluptas adipisci! Esse molestias soluta, doloremque sunt libero dolore nostrum ratione. Natus soluta alias voluptatem, quo eveniet sed quis?</p>
 
-<input type="text" (keyup) = "update($event.target.value)" placeholder="first">
+<input type="text" (keyup) = "update($event.target)" placeholder="first">
 <input type="text" #titleUpdate (keyup.enter) = "update(titleUpdate.value)" placeholder="second">
 
 <input type="text" #cont [(ngModel)] = "title">
@@ -9,3 +14,5 @@
 <ul *ngFor = "let item of countries">
     <li>{{ item }}</li>
 </ul>
+<p choice > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam nobis unde facere animi porro repellat aspernatur, optio ipsam fugit minus soluta voluptatem sapiente illo, quos sit, tempore doloribus itaque veritatis?</p>
+<p choice>data content </p>

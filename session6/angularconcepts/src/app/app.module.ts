@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { FormsModule } from '@angular/forms';
+import { ChoiceDirective } from './directives/choiceDirective';
+import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerComponent
+    CustomerComponent,
+    ChoiceDirective,
+    TemplatedrivenformComponent
   ],
   imports: [
     BrowserModule,
