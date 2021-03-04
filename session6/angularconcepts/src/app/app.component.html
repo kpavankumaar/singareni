@@ -1,0 +1,11 @@
+<h2 *ngIf = "false">Welcome to {{ title }}</h2>
+<p [style.color] = "color == 'red' ? 'blue': 'green' ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ducimus. Officia, voluptas adipisci! Esse molestias soluta, doloremque sunt libero dolore nostrum ratione. Natus soluta alias voluptatem, quo eveniet sed quis?</p>
+
+<input type="text" (keyup) = "update($event.target.value)" placeholder="first">
+<input type="text" #titleUpdate (keyup.enter) = "update(titleUpdate.value)" placeholder="second">
+
+<input type="text" #cont [(ngModel)] = "title">
+<img [src]="srcVal" alt= "mars image">
+<ul *ngFor = "let item of countries">
+    <li>{{ item }}</li>
+</ul>
