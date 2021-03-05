@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample1.component.css']
 })
 export class Sample1Component implements OnInit {
-
-  constructor() { }
+  ngOnChanges(){
+    console.log("sample1component ngOnChanges"); 
+  }
+  constructor(){
+    console.log("sample1component constructor");
+  }
 
   ngOnInit(): void {
+      console.log("sample1component ngOnInit");
+  }
+  ngDoCheck(){
+    console.log("sample1 component ngDocheck"); 
   }
 
 }

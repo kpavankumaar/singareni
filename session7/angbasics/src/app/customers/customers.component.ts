@@ -6,11 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customers.component.css']
 })
 export class CustomersComponent implements OnInit {
-
-  constructor() { }
-
+  ngOnChanges(){
+    console.log("customerscomponent ngOnChanges"); 
+  }
+  constructor(){
+    console.log("customerscomponent constructor");
+  }
   ngOnInit(): void {
+    console.log("CustomersComponent ngOnInit");
+    
   }
   title = "data";
-
+  ngDoCheck(){
+    console.log("customers ngDocheck"); 
+  }
+  ngOnDestroy(){
+    console.log("customers ngOnDestroy"); 
+  }
 }

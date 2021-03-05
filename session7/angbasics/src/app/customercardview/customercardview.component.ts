@@ -6,11 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customercardview.component.css']
 })
 export class CustomercardviewComponent implements OnInit {
-
-  constructor() { }
+  ngOnChanges(){
+    console.log("custeromercardviewcomponent ngOnChanges"); 
+  }
+  constructor(){
+    console.log("custemercardview component constructor");
+  }
 
   ngOnInit(): void {
+    console.log("CustomercardviewComponent ngOnInit");
+    
   }
-  
+  ngDoCheck(){
+    console.log("customerscardview ngDocheck"); 
+  }
   
 }
