@@ -1,9 +1,9 @@
 
-<app-templatedrivenform></app-templatedrivenform>
+<!-- <app-templatedrivenform></app-templatedrivenform> -->
 
+<app-custorders [appTitle] = "title" (sendInfo) = "shareData($event)"></app-custorders>
 
-
-<h2 *ngIf = "false">Welcome to {{ title }}</h2>
+<!-- <h2 *ngIf = "false">Welcome to {{ title }}</h2> -->
 <p [style.color] = "color == 'red' ? 'blue': 'green' ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ducimus. Officia, voluptas adipisci! Esse molestias soluta, doloremque sunt libero dolore nostrum ratione. Natus soluta alias voluptatem, quo eveniet sed quis?</p>
 
 <input type="text" (keyup) = "update($event.target)" placeholder="first">

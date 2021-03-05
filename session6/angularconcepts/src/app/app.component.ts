@@ -12,6 +12,11 @@ export class AppComponent {
   update(data:any){
     this.title = data;
   }
+  contentFromChild:string;
+  shareData(val){
+      this.contentFromChild = val;
+      console.log(val);
+  }
   countries = [
     "India", 
     "China",

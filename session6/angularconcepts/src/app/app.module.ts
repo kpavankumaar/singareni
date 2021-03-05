@@ -7,6 +7,9 @@ import { CustomerComponent } from './customer/customer.component';
 import { FormsModule } from '@angular/forms';
 import { ChoiceDirective } from './directives/choiceDirective';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { OrdersModule } from './orders/orders.module';
+import { DetailcustomerModule } from './detailcustomer/detailcustomer.module';
+import { CustordersComponent } from './orders/custorders.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    OrdersModule,
+    DetailcustomerModule
   ],
   providers: [],
   bootstrap: [AppComponent,CustomerComponent]

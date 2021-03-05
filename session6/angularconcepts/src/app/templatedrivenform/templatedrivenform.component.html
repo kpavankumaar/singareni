@@ -1,4 +1,4 @@
-<form #formData = "ngForm" (ngSubmit)= "update(formData)">
+<!-- <form #formData = "ngForm" (ngSubmit)= "update(formData)">
     <div ngModelGroup = "login">
 
         <div>
@@ -9,16 +9,16 @@
             ngModel
             required
             >
-            <div *ngIf = "formData.controls.login.controls.username.invalid && formData.controls.login.controls.username.touched">
+            <div *ngIf = "formData?.controls.login.controls.username.invalid && formData.controls.login.controls.username.touched">
                 <p [style.color] = "formData.controls.login.controls.username.invalid ? 'red': 'black' ">this is a mandatory field</p>
             </div>
             <ul>
-                <li> valid status {{ formData.controls.login.controls.username.valid }}</li>
-                <li> invalid status {{ formData.controls.login.controls.username.invalid }}</li>
-                <li> Touched status {{ formData.controls.login.controls.username.touched }}</li>
-                <li> Untouched status {{ formData.controls.login.controls.username.untouched }}</li>
-                <li> Dirty status {{ formData.controls.login.controls.username.dirty }}</li>
-                <li> Pristine status {{ formData.controls.login.controls.username.pristine }}</li>
+                <li> valid status {{ formData?.controls.login.controls.username.valid }}</li>
+                <li> invalid status {{ formData?.controls.login.controls.username.invalid }}</li>
+                <li> Touched status {{ formData?.controls.login.controls.username.touched }}</li>
+                <li> Untouched status {{ formData?.controls.login.controls.username.untouched }}</li>
+                <li> Dirty status {{ formData?.controls.login.controls.username.dirty }}</li>
+                <li> Pristine status {{ formData?.controls.login.controls.username.pristine }}</li>
                 
             </ul>  
         </div>
@@ -48,4 +48,4 @@
         </div>
     </div>
     <button>submit</button>
-</form>
+</form> -->
