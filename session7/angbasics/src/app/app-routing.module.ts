@@ -13,6 +13,7 @@ const routes:Routes = [
     ]
   },
   {path:"card", component:CustomercardviewComponent},
+  {path:"sample1", loadChildren:() => import('./sample1module/sample1module.module').then(m => m.Sample1moduleModule)}
 ]
 
 @NgModule({

@@ -7,6 +7,7 @@ import { CustomercardviewComponent } from './customercardview/customercardview.c
 import { CustomersComponent } from './customers/customers.component';
 import { RouterModule, Routes } from '@angular/router';
 import { Sample1Component } from './sample1/sample1.component';
+import { SamplemoduleModule } from './samplemodule/samplemodule.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { Sample1Component } from './sample1/sample1.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SamplemoduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
