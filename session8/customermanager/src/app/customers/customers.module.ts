@@ -8,10 +8,10 @@ import { CustomersComponent } from './customers.component';
 
 
 @NgModule({
-  declarations: [CardviewComponent, GridviewComponent, CustomersComponent],
   imports: [
     CommonModule,
     CustomersRoutingModule
-  ]
+  ],
+  declarations: [CardviewComponent, GridviewComponent, CustomersComponent]
 })
 export class CustomersModule { }
