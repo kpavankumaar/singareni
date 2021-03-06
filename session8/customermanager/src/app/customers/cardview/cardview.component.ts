@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cardview',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardviewComponent implements OnInit {
 
   constructor() { }
-
+  @Input() custData:any
   ngOnInit(): void {
     
   }

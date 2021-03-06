@@ -1,5 +1,10 @@
 <p>customers works!</p>
-
+<div>
+    <a href="#">card view </a>
+    <a href="#"> list view</a>
+</div> 
+<app-cardview [custData] = "userData"></app-cardview>
+<app-gridview></app-gridview>
     <ul >
         <li *ngFor="let item of userData">{{ item.firstName }}</li>
     </ul>
